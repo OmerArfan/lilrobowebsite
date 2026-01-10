@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Lil Robo Studios</title>
+        <link rel="icon" href="images/all/robots.ico" type="ico">
+        <style>
+                body {
+                        background-color:#0069d2;
+                        color: #ffffff;
+                        font-family:sans-serif;
+                        margin: 0;
+                        padding: 20px;
+                }
+
+                a {
+                        color: #999999;
+                }
+
+                a:hover {
+                        color: #ffa500
+                }
+        </style>
+</head>
+<body>
+        <div style="text-align: center; margin-top: 20px;">
+         <img src="../gifs/studiologo.gif" alt="Lil Robo Studios!">
+         <a href="../gamestuff.html"><img src="../images/all/return.png" alt="Return to home page" width="300px" height="80px"></a>
+        </div>
+
+	<h2>What has changed?</h2>
+	
+	<p>Well, I'm back from the dead, and don't worry, I wasn't completely gone (to the two people who might actually read this, if you did do so, you're awesome, love you), and I was actually working on this game! Even though... I should focus on AS whoops!</p>
+	
+
+	<h2>Starting off, very important... Platformer 02 is now Roboquix!!</h2>
+
+	<h3>In terms of levels</h3>
+
+	<li><p>Level 13 from the ice world has returned as Level 12 now! Though its not so ice-y anymore...</p></li>
+	<li><p>Green World has been split in half! We now have Levels 6-12 dedicated for Mechanics!</p></li>
+	<li><p>But don't worry... Green World is still here! Just from... Level 1-6 now only...</p></li>
+	<li><p>Added the diamond medal! Get zero deaths and complete the level in the gold medal range to get a diamond medal!</p></li>
+	<li><p>And... say hello to Iron Robo!</p></li>
+
+	<h3>But that's not it! Something HUGE is now here...</h3>
+
+	<p>Introducing XP! When you complete a Level, depending on how much score you got and how many stars you got in a level, you now get XP for it! Its a nice way to show how good you are at the game!</p>
+
+	<h3>Hah... you thought that was the big thing... well got you wrong! Here is the best part...</h3>
+	
+	<p>INTRODUCING ACCOUNTS!!!! Now, if you are switching over to a new device, and don't want to lose your progress, you can simply create an account, log into it and continue where you have left off!</p>
+	
+	<p>Even better, if you and, let's say, your siblings are playing on the same device, you can now have a separate account for each of them! This can be great to demonstrate who is the most skilled of you all!</p>
+
+	<h2>Thank you for reading this and have a good day!</h2>
+</body>
+</html>

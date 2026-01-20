@@ -103,6 +103,26 @@
 			transform: scale(1.05);
 		}
 	</style>
+	<script>
+	// Load sounds
+	const hoverSound = new Audio("sounds/hover.wav");
+	const clickSound = new Audio("sounds/click.wav");
+
+	// Only target image links inside the image grid
+	const imageLinks = document.querySelectorAll(".image-grid a");
+
+	imageLinks.forEach(link => {
+		link.addEventListener("mouseenter", () => {
+		hoverSound.currentTime = 0;
+		hoverSound.play();
+		});
+
+		link.addEventListener("click", () => {
+		clickSound.currentTime = 0;
+		clickSound.play();
+		});
+	});
+	</script>
 </head>
 <body>
 	<div class="container"></div>
@@ -129,6 +149,9 @@
 	 <div class="image-grid">
 	  <a href="gamestuff.html">
 		<img src="images/indexonly/news.jpg" alt="News and Updates!">
+	  </a>
+	  <a href="instal;.html">
+		<img src="images/indexonly/get.jpg" alt="Install!">
 	  </a>
 	 </div>
 

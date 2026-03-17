@@ -3,23 +3,106 @@
 <head>
         <title>Lil Robo Studios!</title>
         <link rel="icon" href="images/all/robots.ico" type="ico">
-	<style>
-                body {
-                        background-color:#0069d2;
-                        color: #ffffff;
-                        font-family:sans-serif;
-                        margin: 0;
-                        padding: 20px;
-                }
+		<style>
+		body {
+			background: linear-gradient(180deg, #0052a3, #0074e8);
+			color: #ffffff;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
 
-                a {
-                        color: #999999;
-                }
+		a {
+			color: #d6e6ff;
+			text-decoration: none;
+		}
 
-                a:hover {
-                        color: #ffa500
-                }
-        </style>
+		a:hover {
+			color: #ffd27d;
+		}
+
+		.container {
+			width: 92%;
+			max-width: 1200px;
+			margin: auto;
+			padding: 30px 20px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		h1 {
+			margin-top: 30px;
+			font-size: 2.2em;
+		}
+
+		h2 {
+			margin-top: 25px;
+			color: #e0edff;
+		}
+
+		p {
+			line-height: 1.6;
+			color: #f0f4ff;
+		}
+
+		.info-box {
+			background: rgba(255, 255, 255, 0.08);
+			padding: 20px;
+			border-radius: 16px;
+			margin: 25px 0;
+		}
+		
+		.info-box.flex img {
+			border-radius: 0;
+			width: 100px;
+			height: 100px;
+			object-fit: contain;
+			flex-shrink: 0;
+		}
+
+
+		.info-box img {
+			width: 100px;
+			height: 100px;
+			object-fit: contain;
+			flex-shrink: 0;
+		}
+
+		.flex {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+			align-items: center;
+		}
+
+		.flex img {
+			width: 250px;
+			height: 250px;
+			object-fit: cover;
+			border-radius: 14px;
+		}
+
+		.image-grid {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 25px;
+			justify-content: center;
+			margin: 20px 0;
+		}
+
+		.image-grid img {
+			width: 230px;
+			height: 230px;
+			border-radius: 18px;
+			transition: transform 0.2s ease;
+		}
+
+		.image-grid img:hover {
+			transform: scale(1.05);
+		}
+	</style>
 </head>
 <body>
 	<div style="text-align: center; margin-top: 20px;">
@@ -27,16 +110,16 @@
 
 	  <a href="index.html">
 	    <img src="images/all/return.png" alt="Return to Home Page." width="300" height="80">
-  	</a>
+  	  </a>
 
 	  <div style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 40px;">
 	    <img src="images/trapsonly/moveicerobot.png" alt="Ice Robot">
 
 	    <div style="text-align: left; max-width: 500px;">
 	      <h1>What obstacles do you have to avoid during the game?</h1>
-	   	<p>
-	        There are not many obstacles in the game yet, but they can really give you a good challenge! These traps are:
-      		</p>
+	   	  <p>
+	        There are not many obstacles in the game right now, but they can really give you a good challenge! These traps are:
+      	  </p>
 	    </div>
 	  </div>
 	</div>
@@ -47,26 +130,23 @@
         <p>Pretty straightforward to be honest, you hit them and you die...</p>
 
         <h3>Saws!</h3>
-        <h4>And no, it is not the bangladeshi flag...</h4>
         <img src="images/trapsonly/saw.jpg" alt="Saws!">
         <h4>There are different types of saws!</h4>
 
+		<p>Starting off, of course there is the saw which stays where it is, even if it might seem like it is gonna break off any second...</p>
+	
         <h4>ROTATING SAWS</h4>
         <p>These saws rotate around a specific block! Make sure to jump over them carefully or you might get killed!</p>
 
         <h4>MOVING SAWS</h4>
-        <p>These saws move, either in the x-axis or y-axis, and will move back and forth continously! Be careful... they can be fast and even if you dodge them for the time being, they can come back and hit you even harder!<p>
+        <p>These saws move, either horizontally or vertically, and will move back and forth continously! Be careful... they can be fast and even if you dodge them for the time being, they can come back and still hit you!<p>
 
         <h4>RUSHING SAWS</h4>
-        <p>Almost exactly like moving saws, but, when they reach their end point, they instantly go back to their starting point! Hopefully you can understand lol
-
-        <h4> AND LAST, BUT NOT LEAST... THE SAW WHICH ALWAYS STAYS STILL!!!! WOW!!!</h4>
-        <p>Don't... underestimate it though... it can be exactly what ruins your good run...</p>
+        <p>Nearly identical to moving saws, but! They go back to their starting point just as they reach their end...</p>
 
         <h3>Lasers!</h3>
         <img src="images/trapsonly/laser.jpg" alt="Lasers!">
         <p>They appear very rarely, but they don't allow you to just mindlessly take shortcuts! No cheating!</p>
 
-	
 </body>
 </html>

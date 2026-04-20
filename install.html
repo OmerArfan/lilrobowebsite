@@ -106,39 +106,23 @@
 			transform: scale(1.05);
 		}
 	</style>
-	<script>
-	// Only target image links inside the image grid
-	const imageLinks = document.querySelectorAll(".image-grid a");
-
-	imageLinks.forEach(link => {
-		link.addEventListener("mouseenter", () => {
-		hoverSound.currentTime = 0;
-		hoverSound.play();
-		});
-
-		link.addEventListener("click", () => {
-		clickSound.currentTime = 0;
-		clickSound.play();
-		});
-	});
-	</script>
 </head>
 <body>
 	<div class="container"></div>
 	 <div class="center">
  	  <img src="gifs/studiologo.gif" alt="Lil Robo Studios!">	
 
-        <section id="download-area" style="text-align: center; margin-top: 50px; font-family: sans-serif;">
+        <section id="download-area" style="text-align: center; margin-top: 50px;">
          <h1>Download Roboquix!</h1>
          
          <a href="https://github.com/OmerArfan/platformer02/releases/download/1.3.9/Roboquix-1.3.9.0470-windows-x64.zip" 
          style="display: inline-block; margin: 10px; padding: 20px 40px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 6px; font-size: 1.2rem; font-weight: bold;">
-          Roboquix 1.3.9.0470 powered by Cleobo 0.1.6.13 (.zip for Windows x64)
+          Roboquix 1.3.9.0470 powered by Cleobo 0.1.7 (.zip for Windows x64)
          </a>
 
          <a href="https://github.com/OmerArfan/platformer02/releases/download/1.3.9/Roboquix-1.3.9.0470-linux-x64.zip" 
          style="display: inline-block; margin: 10px; padding: 20px 40px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 6px; font-size: 1.2rem; font-weight: bold;">
-          Roboquix 1.3.9.0470 powered by Cleobo 0.1.6.13  (.zip for Linux* x64)
+          Roboquix 1.3.9.0470 powered by Cleobo 0.1.7  (.zip for Linux* x64)
          </a>
         </section>
 

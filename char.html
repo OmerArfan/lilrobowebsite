@@ -13,7 +13,6 @@
 			font-family: 'Noto Sans', sans-serif;
 			margin: 0;
 			padding: 0;
-
 			text-shadow: 
 		        -1px -1px 0 #001a33,  
 		         1px -1px 0 #001a33,
@@ -25,37 +24,30 @@
 			color: #d6e6ff;
 			text-decoration: none;
 		}
-
 		a:hover {
 			color: #ffd27d;
 		}
-
 		.container {
 			width: 92%;
 			max-width: 1200px;
 			margin: auto;
 			padding: 30px 20px;
 		}
-
 		.center {
 			text-align: center;
 		}
-
 		h1 {
 			margin-top: 30px;
 			font-size: 2.2em;
 		}
-
 		h2 {
 			margin-top: 25px;
 			color: #e0edff;
 		}
-
 		p {
 			line-height: 1.6;
 			color: #f0f4ff;
 		}
-
 		.info-box {
 			background: rgba(255, 255, 255, 0.08);
 			padding: 20px;
@@ -70,73 +62,262 @@
 			object-fit: contain;
 			flex-shrink: 0;
 		}
-
-
 		.info-box img {
 			width: 100px;
 			height: 100px;
 			object-fit: contain;
 			flex-shrink: 0;
 		}
-
 		.flex {
 			display: flex;
 			flex-wrap: wrap;
 			gap: 20px;
 			align-items: center;
 		}
-
 		.flex img {
 			width: 250px;
 			height: 250px;
 			object-fit: cover;
 			border-radius: 14px;
 		}
-
-		.image-grid {
+		
+		/* Rarity filter buttons */
+		.rarity-filter {
 			display: flex;
-			flex-wrap: wrap;
-			gap: 25px;
 			justify-content: center;
-			margin: 20px 0;
+			gap: 15px;
+			margin: 30px 0;
+			flex-wrap: wrap;
 		}
-
-		.image-grid img {
-			width: 230px;
-			height: 230px;
-			border-radius: 18px;
-			transition: transform 0.2s ease;
+		
+		.rarity-btn {
+			padding: 12px 24px;
+			border: none;
+			border-radius: 8px;
+			background: rgba(255, 255, 255, 0.1);
+			color: #ffffff;
+			font-size: 1em;
+			font-family: 'Noto Sans', sans-serif;
+			cursor: pointer;
+			transition: all 0.2s ease;
 		}
-
-		.image-grid img:hover {
-			transform: scale(1.05);
+		
+		.rarity-btn:hover {
+			background: rgba(255, 255, 255, 0.2);
+		}
+		
+		.rarity-btn.active.common {
+			background: #00f929;
+			color: #000000;
+		}
+		
+		.rarity-btn.active.rare {
+			background: #00c4ff;
+			color: #000000;
+		}
+		
+		.rarity-btn.active.epic {
+			background: #6600ff;
+			color: #ffffff;
+		}
+		
+		.rarity-btn.active.legi {
+			background: #ff9a00;
+			color: #000000;
+		}
+		
+		/* Robo cards grid */
+		.robo-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 30px;
+			margin: 40px 0;
+		}
+		
+		.robo-card {
+			background: rgba(255, 255, 255, 0.08);
+			padding: 25px;
+			border-radius: 16px;
+			text-align: center;
+			border-left: 4px solid rgba(255, 255, 255, 0.3);
+			transition: all 0.3s ease;
+			display: none;
+		}
+		
+		.robo-card.visible {
+			display: block;
+			animation: fadeIn 0.3s ease;
+		}
+		
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+				transform: translateY(10px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+		
+		.robo-card:hover {
+			background: rgba(255, 255, 255, 0.12);
+			transform: translateY(-5px);
+		}
+		
+		.robo-card img {
+			width: 200px;
+			height: 200px;
+			object-fit: cover;
+			border-radius: 12px;
+			margin-bottom: 15px;
+		}
+		
+		.robo-card h3 {
+			margin: 15px 0 10px 0;
+			font-size: 1.5em;
+		}
+		
+		.robo-rarity {
+			display: inline-block;
+			padding: 6px 12px;
+			border-radius: 8px;
+			font-size: 0.85em;
+			margin-bottom: 12px;
+			font-weight: 700;
+		}
+		
+		.robo-rarity.common {
+			background: rgba(0, 249, 41, 0.2);
+			color: #00f929;
+			border: 1px solid #00f929;
+		}
+		
+		.robo-rarity.rare {
+			background: rgba(0, 196, 255, 0.2);
+			color: #00c4ff;
+			border: 1px solid #00c4ff;
+		}
+		
+		.robo-rarity.epic {
+			background: rgba(102, 0, 255, 0.2);
+			color: #6600ff;
+			border: 1px solid #6600ff;
+		}
+		
+		.robo-rarity.legi {
+			background: rgba(255, 154, 0, 0.2);
+			color: #ff9a00;
+			border: 1px solid #ff9a00;
+		}
+		
+		.robo-card p {
+			font-size: 0.95em;
+			line-height: 1.5;
 		}
 	</style>
 </head>
 <body>
-	<div style="text-align: center; margin-top: 20px;"> <img src="gifs/studiologo.gif" alt="Lil Robo Studios!"><br>
-         <a href="index.html"><img src="images/all/return.png" alt="Return to Home Page." width="300px" height="80px"></a>
-	 	 <h1>Who are the Robos in the game?</h1>
+	<div class="container">
+		<div class="center">
+			<img src="gifs/studiologo.gif" alt="Lil Robo Studios!"><br>
+			<a href="index.html"><img src="images/all/return.png" alt="Return to Home Page." width="300px" height="80px"></a>
+			<h1>Who are the Robos in the game?</h1>
+		</div>
+		
+		<!-- Rarity Filter -->
+		<div class="center">
+			<div class="rarity-filter">
+				<button class="rarity-btn active common" onclick="filterRarity('common')">Common</button>
+				<button class="rarity-btn rare" onclick="filterRarity('rare')">Rare</button>
+				<button class="rarity-btn epic" onclick="filterRarity('epic')">Epic</button>
+				<button class="rarity-btn legi" onclick="filterRarity('legi')">Legendary</button>
+			</div>
+		</div>
+		
+		<!-- Robo Cards Grid -->
+		<div class="robo-grid">
+			<!-- Common Robos -->
+			<div class="robo-card visible" data-rarity="common">
+				<h3>Lil Robo</h3>
+				<img src="images/charonly/robot.jpg" alt="Lil Robo!">
+				<p>He is the starting character, and of course, the studio's main mascot! He is happy, innocent and charming!</p>
+			</div>
+			
+			<div class="robo-card visible" data-rarity="common">
+				<h3>Sunny Robo</h3>
+				<img src="images/charonly/sunnyrobot.jpg" alt="Sunny Robo!">
+				<p>Is there anything special about this fella? Maybe he is Lil Robo's lost brother... wait, robos have siblings?</p>
+			</div>
+			
+			<!-- Rare Robos -->
+			<div class="robo-card" data-rarity="rare">
+				<h3>Evil Robo</h3>
+				<img src="images/charonly/evilrobot.jpg" alt="Evil Robo">
+				<p>He once disappeared into a mysterious place... but so have many others who went there...</p>
+			</div>
+			
+			<div class="robo-card" data-rarity="rare">
+				<h3>Green Robo</h3>
+				<img src="images/charonly/greenrobot.jpg" alt="Green Robo">
+				<p>Her wisdom has always been a mystery, and so have her eyes...</p>
+			</div>
+			
+			<div class="robo-card" data-rarity="rare">
+				<h3>Pirate Robo</h3>
+				<img src="images/charonly/piraterobot.jpg" alt="Pirate Robo">
+				<p>He is the captain of the ship! That said, does anyone know which ship?</p>
+			</div>
+			
+			<!-- Epic Robos -->
+			<div class="robo-card" data-rarity="epic">
+				<h3>Iron Robo</h3>
+				<img src="images/charonly/ironrobot.jpg" alt="Iron Robo">
+				<p>No one knows whats hiding underneath his metal body... but it's for the best that no one knows...</p>
+			</div>
+			
+			<div class="robo-card" data-rarity="epic">
+				<h3>Cakebot</h3>
+				<img src="images/charonly/cakebot.jpg" alt="Cakebot!">
+				<p>Happy anniversary! Is he a cake, or is he a robot? Well, shocking news, he's both!</p>
+			</div>
+			
+			<div class="robo-card" data-rarity="epic">
+				<h3>Cash Robo</h3>
+				<img src="images/charonly/cashrobot.jpg" alt="Cash Robo">
+				<p>He likes money, he has money, he wants money. He only knows money.</p>
+			</div>
+			
+			<!-- Legendary Robos -->
+			<div class="robo-card" data-rarity="legi">
+				<h3>Vectorbot</h3>
+				<img src="images/charonly/vectorbot.jpg" alt="Vectorbot">
+				<p>Found in a factory, but who thought it was a good idea to bring him to life?!</p>
+			</div>
+		</div>
 	</div>
-
-	<h3>Lil Robo</h3>
-	<img src="images/charonly/robot.jpg" alt="Lil Robo!">
-	<p>He is the starting character, and of course, the studio's main mascot! He is happy, innocent and charming!</p>
 	
-	<h3>Evil Robo</h3>
-	<img src="images/charonly/evilrobot.jpg" alt="Evil Robo">
-	<p>He once disappeared into a mysterious place... but so have many others who went there...</p>
-	
-	<h3>Green Robo</h3>
-	<img src="images/charonly/greenrobot.jpg" alt="Green Robo">
-	<p>Her wisdom has always been a mystery, and so have her eyes...</p>
-
-	<h3>Iron Robo</h3>
-	<img src="images/charonly/ironrobot.jpg" alt="Iron Robo">
-	<p>No one knows whats hiding underneath his metal body... but it's for the best that no one knows...</p>
-
-	<h3>Cakebot</h3>
-	<img src="images/charonly/cakebot.jpg" alt="Cakebot!">
-	<p>Happy anniversary! Is he a cake, or is he a robot? Well, shocking news, he's both!</p>
+	<script>
+		function filterRarity(rarity) {
+			// Get all robo cards
+			const cards = document.querySelectorAll('.robo-card');
+			const buttons = document.querySelectorAll('.rarity-btn');
+			
+			// Remove active class from all buttons
+			buttons.forEach(btn => btn.classList.remove('active'));
+			
+			// Add active class to clicked button
+			event.target.classList.add('active');
+			
+			// Filter cards
+			cards.forEach(card => {
+				if (card.dataset.rarity === rarity) {
+					card.classList.add('visible');
+				} else {
+					card.classList.remove('visible');
+				}
+			});
+		}
+	</script>
 </body>
 </html>

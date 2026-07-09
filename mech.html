@@ -1,152 +1,176 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lil Robo Studios!</title>
-	<link rel="icon" href="images/all/robots.ico" type="ico">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<style>
-		body {
-			background: linear-gradient(180deg, #0052a3, #0074e8);
-			color: #ffffff;
-			font-family: 'Noto Sans', sans-serif;
-			margin: 0;
-			padding: 0;
+    <title>Lil Robo Studios!</title>
+    <link rel="icon" href="images/all/robots.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(180deg, #0052a3, #0074e8);
+            color: #ffffff;
+            font-family: 'Noto Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-shadow: 
+                -1px -1px 0 #001a33,   
+                 1px -1px 0 #001a33,
+                -1px  1px 0 #001a33,
+                 1px  1px 0 #001a33;
+        }
 
-			text-shadow: 
-		        -1px -1px 0 #001a33,  
-		         1px -1px 0 #001a33,
-		        -1px  1px 0 #001a33,
-		         1px  1px 0 #001a33;
-		}
+        a {
+            color: #d6e6ff;
+            text-decoration: none;
+        }
 
-		a {
-			color: #d6e6ff;
-			text-decoration: none;
-		}
+        a:hover {
+            color: #ffd27d;
+        }
 
-		a:hover {
-			color: #ffd27d;
-		}
+        .container {
+            width: 92%;
+            max-width: 900px;
+            margin: auto;
+            padding: 30px 20px;
+        }
 
-		.container {
-			width: 92%;
-			max-width: 1200px;
-			margin: auto;
-			padding: 30px 20px;
-		}
+        .center {
+            text-align: center;
+        }
 
-		.center {
-			text-align: center;
-		}
+        h1 {
+            margin-top: 30px;
+            font-size: 2.2em;
+        }
 
-		h1 {
-			margin-top: 30px;
-			font-size: 2.2em;
-		}
+        h2 {
+            margin-top: 35px;
+            color: #ffd27d;
+            text-align: center;
+        }
 
-		h2 {
-			margin-top: 25px;
-			color: #e0edff;
-		}
+        p {
+            line-height: 1.6;
+            color: #f0f4ff;
+            text-align: center;
+        }
 
-		p {
-			line-height: 1.6;
-			color: #f0f4ff;
-		}
+        .item-card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 16px;
+            margin: 25px 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-		.info-box {
-			background: rgba(255, 255, 255, 0.08);
-			padding: 20px;
-			border-radius: 16px;
-			margin: 25px 0;
-		}
-		
-		.info-box.flex img {
-			border-radius: 0;
-			width: 100px;
-			height: 100px;
-			object-fit: contain;
-			flex-shrink: 0;
-		}
+        .asset-group {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
 
+        .asset-group img {
+            height: 90px;
+            object-fit: contain;
+            border-radius: 6px;
+        }
 
-		.info-box img {
-			width: 100px;
-			height: 100px;
-			object-fit: contain;
-			flex-shrink: 0;
-		}
+        .asset-group img[src*=".gif"] {
+            height: 180px;
+        }
 
-		.flex {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 20px;
-			align-items: center;
-		}
+        .feature-list {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            list-style-type: none;
+            max-width: 600px;
+            margin: 15px auto;
+            text-align: left;
+        }
 
-		.flex img {
-			width: 250px;
-			height: 250px;
-			object-fit: cover;
-			border-radius: 14px;
-		}
-
-		.image-grid {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 25px;
-			justify-content: center;
-			margin: 20px 0;
-		}
-
-		.image-grid img {
-			width: 230px;
-			height: 230px;
-			border-radius: 18px;
-			transition: transform 0.2s ease;
-		}
-
-		.image-grid img:hover {
-			transform: scale(1.05);
-		}
-	</style>
+        .feature-list li {
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 3px solid #ffd27d;
+        }
+    </style>
 </head>
 <body>
-	<div style="text-align: center; margin-top: 20px;"> <img src="gifs/studiologo.gif" alt="Lil Robo Studios!"><br>
-	
-	 <a href="index.html"><img src="images/all/return.png" alt="Return to home page" width="300px" height="80px"></a>
-	 <h1>What are the basics of the game?</h1>
-	 <p>Of course, these basics are really simple, but don't be fooled...</p>
 
-	</div>
+    <div class="container">
+        <div class="center"> 
+            <img src="gifs/studiologo.gif" alt="Lil Robo Studios!"><br>
+            <a href="index.html">
+                <img src="images/all/return.png" alt="Return to home page" width="300" height="80">
+            </a>
+            <h1>What are the basics of the game?</h1>
+            <p>These fundamental core mechanics may look straightforward at first glance, but navigating them flawlessly requires absolute precision. Don't let the simplicity fool you!</p>
+        </div>
+        
+        <!-- The Block -->
+        <div class="item-card">
+            <h2>The Standard Block</h2>
+            <p>The classic, reliable black block. It stays firmly in place, serving as your primary foundation for safe platforming and building momentum!</p>
+        </div>
 
-	<h3>The Block!</h3>
-	<p>The classic block, it always stays there... waiting for you to stand on it...</p>
+        <!-- The Jump Block -->
+        <div class="item-card">
+            <h2>The Jump Block</h2>
+            <div class="asset-group">
+                <img src="images/mechonly/jumpblock.jpg" alt="Jump Block!">
+            </div>
+            <p>Stepping onto a Jump Block launches Lil Robo high into the air. The ultimate peak of your launch depends heavily on your active gravity state, making it a key tool for vertical navigation.</p>
+        </div>
 
-	<h3>The Jump Block!</h3>
-	<img src="images/mechonly/jumpblock.jpg" alt="Jump Block!">
-	<p>When you get on the jump block, you get thrown up high, maybe even higher depending on your gravity...</p>>
+        <!-- The Moving Block -->
+        <div class="item-card">
+            <h2>The Moving Block</h2>
+            <div class="asset-group">
+                <img src="images/mechonly/moveblock.jpg" alt="Moving Block!">
+            </div>
+            <p>This platform travels back and forth along a fixed path. Hop aboard so you can cross massive gaps safely!</p>
+        </div>
 
-	<h3>The Moving Block!</h3>
-	<img src="images/mechonly/moveblock.jpg" alt="Moving Block!">
-	<p>This block moves back and forth... taking you on board with it!</p>
-	
-	<h3>Checkpoints!</h3>
-	<img src="images/mechonly/yellow_flag.png" alt="Unused Checkpoint">		<img src="images/mechonly/green_flag.png" alt="Active Checkpoint!">    <img src="images/mechonly/used.png" alt="Used Checkpoint!"> 
-	<p>The Yellow Flag is when a checkpoint is not currently active!</p>
-	<p>The Green flag shows when a checkpoint is currently active, and where you spawn if you die!</p>
-	<p>The Grey flag, though, means that the flag was once a green flag and can no longer be used again.</p>
+        <!-- Checkpoints -->
+        <div class="item-card">
+            <h2>Checkpoints</h2>
+            <div class="asset-group">
+                <img src="images/mechonly/yellow_flag.png" alt="Unused Checkpoint">        
+                <img src="images/mechonly/green_flag.png" alt="Active Checkpoint!">    
+                <img src="images/mechonly/used.png" alt="Used Checkpoint!"> 
+            </div>
+            <p>Flags dictate where you respawn after you die. They operate under three distinct states:</p>
+            <ul class="feature-list">
+                <li><strong>Yellow Flag:</strong> An inactive checkpoint waiting to be claimed.</li>
+                <li><strong>Green Flag:</strong> Your currently active checkpoint. This marks your exact respawn coordinate if you die.</li>
+                <li><strong>Grey Flag:</strong> A depleted checkpoint. This indicates you have moved on to a later spawn location, meaning this flag can no longer be reused.</li>
+            </ul>
+        </div>
 
-	<h3>Teleporters!</h3>
-	<img src="images/mechonly/teleporter.jpg" alt="Entry Teleporter!">
-	<img src="images/mechonly/teleporter2.jpg" alt="Exit Teleporter!">
-	<p>Teleporters help you to go from one place to another... in an instant!</p>
+        <!-- Teleporters -->
+        <div class="item-card">
+            <h2>Teleporters</h2>
+            <div class="asset-group">
+                <img src="images/mechonly/teleporter.jpg" alt="Entry Teleporter!">
+                <img src="images/mechonly/teleporter2.jpg" alt="Exit Teleporter!">
+            </div>
+            <p>Instantly shifts your position across the map. Step into the entry portal to instantly travel towards the corresponding end portal.</p>
+        </div>
 
-	<h3>Quicksand!</h3>
-	<img src="gifs/mechonly/qsand.gif" alt="Quicksand!">
-	<p>Be careful when you stand on quicksand and make sure to balance yourself around it wisely! If you do not react quickly, you can get sucked into it unless you jump fast enough.</p>
+        <!-- Quicksand -->
+        <div class="item-card">
+            <h2>Quicksand</h2>
+            <div class="asset-group">
+                <img src="gifs/mechonly/qsand.gif" alt="Quicksand!">
+            </div>
+            <p>Be careful when you stand on quicksand and make sure to balance yourself around it wisely! If you do not react quickly, you can get sucked into it unless you jump fast enough.</p>
+        </div>
+    </div>
 
 </body>
 </html>

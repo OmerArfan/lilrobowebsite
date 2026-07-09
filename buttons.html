@@ -1,147 +1,146 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lil Robo Studios!</title>
-	<link rel="icon" href="images/all/robots.ico" type="ico">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<style>
-		body {
-			background: linear-gradient(180deg, #0052a3, #0074e8);
-			color: #ffffff;
-			font-family: 'Noto Sans', sans-serif;
-			margin: 0;
-			padding: 0;
+    <title>Lil Robo Studios!</title>
+    <link rel="icon" href="images/all/robots.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(180deg, #0052a3, #0074e8);
+            color: #ffffff;
+            font-family: 'Noto Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-shadow: 
+                -1px -1px 0 #001a33,   
+                 1px -1px 0 #001a33,
+                -1px  1px 0 #001a33,
+                 1px  1px 0 #001a33;
+        }
 
-			text-shadow: 
-		        -1px -1px 0 #001a33,  
-		         1px -1px 0 #001a33,
-		        -1px  1px 0 #001a33,
-		         1px  1px 0 #001a33;
-		}
+        a {
+            color: #d6e6ff;
+            text-decoration: none;
+        }
 
-		a {
-			color: #d6e6ff;
-			text-decoration: none;
-		}
+        a:hover {
+            color: #ffd27d;
+        }
 
-		a:hover {
-			color: #ffd27d;
-		}
+        .container {
+            width: 92%;
+            max-width: 900px;
+            margin: auto;
+            padding: 30px 20px;
+        }
 
-		.container {
-			width: 92%;
-			max-width: 1200px;
-			margin: auto;
-			padding: 30px 20px;
-		}
+        .center {
+            text-align: center;
+        }
 
-		.center {
-			text-align: center;
-		}
+        h1 {
+            margin-top: 30px;
+            font-size: 2.2em;
+        }
 
-		h1 {
-			margin-top: 30px;
-			font-size: 2.2em;
-		}
+        h2 {
+            margin-top: 35px;
+            color: #ffd27d;
+            text-align: center;
+        }
 
-		h2 {
-			margin-top: 25px;
-			color: #e0edff;
-		}
+        p {
+            line-height: 1.6;
+            color: #f0f4ff;
+            text-align: center;
+        }
 
-		p {
-			line-height: 1.6;
-			color: #f0f4ff;
-		}
+        .item-card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-		.info-box {
-			background: rgba(255, 255, 255, 0.08);
-			padding: 20px;
-			border-radius: 16px;
-			margin: 25px 0;
-		}
-		
-		.info-box.flex img {
-			border-radius: 0;
-			width: 100px;
-			height: 100px;
-			object-fit: contain;
-			flex-shrink: 0;
-		}
+        .asset-group {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
 
-
-		.info-box img {
-			width: 100px;
-			height: 100px;
-			object-fit: contain;
-			flex-shrink: 0;
-		}
-
-		.flex {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 20px;
-			align-items: center;
-		}
-
-		.flex img {
-			width: 250px;
-			height: 250px;
-			object-fit: cover;
-			border-radius: 14px;
-		}
-
-		.image-grid {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 25px;
-			justify-content: center;
-			margin: 20px 0;
-		}
-
-		.image-grid img {
-			width: 230px;
-			height: 230px;
-			border-radius: 18px;
-			transition: transform 0.2s ease;
-		}
-
-		.image-grid img:hover {
-			transform: scale(1.05);
-		}
-	</style>
+        .asset-group img {
+            height: 60px;
+            object-fit: contain;
+            border-radius: 6px;
+        }
+    </style>
 </head>
 <body>
-        <div style="text-align: center; margin-top: 20px;"> <img src="gifs/studiologo.gif" alt="Lil Robo Studios!"><br>
 
-         <a href="index.html"><img src="images/all/return.png" alt="Return to Home Page." width="300px" height="80px"></a>
-         <h1>What are the different buttons in the game?</h1>
-	 <p>Buttons are first introduced in Level 8, and they can either help you, or get you in a difficult situation.</p>
+    <div class="container">
+        <div class="center"> 
+            <img src="gifs/studiologo.gif" alt="Lil Robo Studios!"><br>
+            <a href="index.html">
+                <img src="images/all/return.png" alt="Return to Home Page." width="300" height="80">
+            </a>
+            <h1>What are the different buttons in the game?</h1>
+            <p>While Coins make their debut in Ship World, buttons are introduced in Mech World. These triggers can either clear a path to victory or land you in a tight spot depending on how you use them!</p>
+        </div>
+        
+        <!-- Coins and Locked Blocks -->
+        <div class="item-card">
+            <h2>The Coins and Locked Blocks</h2>
+            <div class="asset-group">
+                <img src="images/buttonsonly/coin.jpg" alt="Coin!">        
+                <img src="images/buttonsonly/timercoin.jpg" alt="Timer Coin">        
+                <img src="images/buttonsonly/lockedblock.jpg" alt="Locked Block!">
+            </div>
+            <p>To bypass a standard Locked Block, you'll need to hunt down a nearby coin. But be careful! If you die, you'll have to collect that coin again.</p>
+            <p>Orange Coins work differently: collecting one starts a ticking countdown. Once time runs out, the locked block snaps right back into place. Move fast, or you might have to collect the coin again, or even worse, get crushed by the block!</p>
+        </div>
 
-	</div>
-		
-        <h3>The Coins and the Locked Block!</h3>
-        <img src="images/buttonsonly/coin.jpg" alt="Coin!">		<img src="images/buttonsonly/timercoin.jpg" alt="Timer Coin" width="57px" height="60px">		<img src="images/buttonsonly/lockedblock.jpg" alt="Locked Block!">
-        <p>For this block, you have to find a coin to unlock it! But... be careful! If you die, you will have to get the coin again!</p>
-	<p>However, for an orange coin, the truth is different, you have a set time left after collecting the coin... because after that... the door will re-appear again... and you will get crushed...</p>
+        <!-- Gravity Weakeners -->
+        <div class="item-card">
+            <h2>Gravity Weakeners</h2>
+            <div class="asset-group">
+                <img src="images/buttonsonly/gravity_weak.png" alt="Gravity Weakeners!">
+            </div>
+            <p>Touching this button causes you to jump much higher than normal. Pair it with a jump block to go even higher!</p>
+        </div>
 
-	<h3>Gravity Weakers!</h3>
-	<img src="images/buttonsonly/gravity_weak.png" alt="Gravity Weakers!">
-	<p>When you touch the gravity weaker button, you jump higher, and even higher with the jump block!</p>
+        <!-- Gravity Strengtheners -->
+        <div class="item-card">
+            <h2>Gravity Strengtheners</h2>
+            <div class="asset-group">
+                <img src="images/buttonsonly/gravity_strong.png" alt="Gravity Strengtheners!">
+            </div>
+            <p>Touching this button reduces your jump height. While it may sound like a drawback, it's incredibly useful for precision short-jumping beneath low-hanging hazards where a standard jump would send you flying into the ceiling of a block.</p>
+        </div>
 
-	<h3>Gravity Strengtheners!</h3>
-	<img src="images/buttonsonly/gravity_strong.png" alt="Gravity Strengtheners!">
-	<p>When you touch the gravity strengthener button, your gravity becomes stronger! This can help when, for example, you may hit a block with a normal jump... but not with a shorter jump...</p>
+        <!-- The Light Switch -->
+        <div class="item-card">
+            <h2>The Light Switch</h2>
+            <div class="asset-group">
+                <img src="images/buttonsonly/light.png" alt="Light Switch!">        
+                <img src="images/buttonsonly/lightblock.jpg" alt="Locked Block!">
+            </div>
+            <p>Activating this button plunges almost the entire level into darkness! While navigating becomes a challenge, it's the only way to phase out the purple blocks blocking your path to the End Portal.</p>
+        </div>
 
-	<h3>The Light Switch!</h3>
-	<img src="images/buttonsonly/light.png" alt="Light Switch!">		<img src="images/buttonsonly/lightblock.jpg" alt="Locked Block!">
-	<p>The light button turns out (almost) all the lights! But it will help open purple blocks, which block your way to victory!</p>
-
-	<h3>The Speedster!</h3>
-	<img src="images/buttonsonly/speedster.png" alt="Speedster!">
-	<p>The speedster button increases your velocity! If you need to jump over a huge gap, or need to escape a saw rushing towards you, the speedster comes in handy by giving you the speed you needed to run faster!</p>
+        <!-- The Speedster -->
+        <div class="item-card">
+            <h2>The Speedster</h2>
+            <div class="asset-group">
+                <img src="images/buttonsonly/speedster.png" alt="Speedster!">
+            </div>
+            <p>The speedster button boosts your velocity. Whether you need to clear a massive gap or sprint away from a rushing saw going down your path, this is the way for ultimate speed!</p>
+        </div>
+    </div>
 
 </body>
-</html>		
+</html>

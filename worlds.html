@@ -2,142 +2,135 @@
 <html>
 <head>
     <title>Lil Robo Studios!</title>
-	<link rel="icon" href="images/all/robots.ico" type="ico">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<style>
-		body {
-			background: linear-gradient(180deg, #0052a3, #0074e8);
-			color: #ffffff;
-			font-family: 'Noto Sans', sans-serif;
-			margin: 0;
-			padding: 0;
+    <link rel="icon" href="images/all/robots.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(180deg, #0052a3, #0074e8);
+            color: #ffffff;
+            font-family: 'Noto Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-shadow: 
+                -1px -1px 0 #001a33,   
+                 1px -1px 0 #001a33,
+                -1px  1px 0 #001a33,
+                 1px  1px 0 #001a33;
+        }
 
-			text-shadow: 
-		        -1px -1px 0 #001a33,  
-		         1px -1px 0 #001a33,
-		        -1px  1px 0 #001a33,
-		         1px  1px 0 #001a33;
-		}
+        a {
+            color: #d6e6ff;
+            text-decoration: none;
+        }
 
-		a {
-			color: #d6e6ff;
-			text-decoration: none;
-		}
+        a:hover {
+            color: #ffd27d;
+        }
 
-		a:hover {
-			color: #ffd27d;
-		}
+        .container {
+            width: 92%;
+            max-width: 900px;
+            margin: auto;
+            padding: 30px 20px;
+        }
 
-		.container {
-			width: 92%;
-			max-width: 1200px;
-			margin: auto;
-			padding: 30px 20px;
-		}
+        .center {
+            text-align: center;
+        }
 
-		.center {
-			text-align: center;
-		}
+        h1 {
+            margin-top: 30px;
+            font-size: 2.2em;
+        }
 
-		h1 {
-			margin-top: 30px;
-			font-size: 2.2em;
-		}
+        h2 {
+            margin-top: 35px;
+            color: #ffd27d;
+            text-align: center;
+        }
 
-		h2 {
-			margin-top: 25px;
-			color: #e0edff;
-		}
+        p {
+            line-height: 1.6;
+            color: #f0f4ff;
+            text-align: center;
+        }
 
-		p {
-			line-height: 1.6;
-			color: #f0f4ff;
-		}
+        .item-card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 16px;
+            margin: 25px 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-		.info-box {
-			background: rgba(255, 255, 255, 0.08);
-			padding: 20px;
-			border-radius: 16px;
-			margin: 25px 0;
-		}
-		
-		.info-box.flex img {
-			border-radius: 0;
-			width: 100px;
-			height: 100px;
-			object-fit: contain;
-			flex-shrink: 0;
-		}
+        .world-preview {
+            display: block;
+            max-width: 800px;
+            width: 100%;
+            height: auto;
+            margin: 15px auto 0 auto;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
 
-
-		.info-box img {
-			width: 100px;
-			height: 100px;
-			object-fit: contain;
-			flex-shrink: 0;
-		}
-
-		.flex {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 20px;
-			align-items: center;
-		}
-
-		.flex img {
-			width: 250px;
-			height: 250px;
-			object-fit: cover;
-			border-radius: 14px;
-		}
-
-		.image-grid {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 25px;
-			justify-content: center;
-			margin: 20px 0;
-		}
-
-		.image-grid img {
-			width: 230px;
-			height: 230px;
-			border-radius: 18px;
-			transition: transform 0.2s ease;
-		}
-
-		.image-grid img:hover {
-			transform: scale(1.05);
-		}
-	</style>
+        .note-box {
+            margin-top: 50px;
+            padding: 20px;
+            border: 2px dashed rgba(255, 255, 255, 0.6);
+            text-align: center;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <div style="text-align: center; margin-top: 20px;"> <img src="gifs/studiologo.gif" alt="Lil Robo Studios!"><br>
 
-         <a href="index.html"><img src="images/all/return.png" alt="Return to Home Page." width="300px" height="80px"></a><!DOCTYPE html>
-         <h1>What are the different worlds in the game?</h1>
-	     <p>As of right now, there are four worlds in the game. They are:</p>
-	
-	</div>
+    <div class="container">
+        <div class="center"> 
+            <img src="gifs/studiologo.gif" alt="Lil Robo Studios!"><br>
+            <a href="index.html">
+                <img src="images/all/return.png" alt="Return to Home Page." width="300" height="80">
+            </a>
+            <h1>What are the different worlds in the game?</h1>
+            <p>Roboquix currently features four worlds. Each world introduces unique challenges to complete and content to master:</p>
+        </div>
+        
+        <!-- Green World -->
+        <div class="item-card">
+            <h2>Green World</h2>
+            <p>Your journey begins here! Green World helps you start off simple by getting to know the basic content of the game.</p>
+            <img src="images/worldsonly/greenworldimg.jpg" alt="Green World" class="world-preview"> 
+        </div>
 
-	<h3>GREEN WORLD</h3>
-	<p>In green world, you start off simple by getting to know the simple mechanics of the game!</p>
-	<img src="images/worldsonly/greenworldimg.jpg" alt="Green World">	
+        <!-- Ship World -->
+        <div class="item-card">
+            <h2>Ship World</h2>
+            <p>Step into dangerous territory! In Ship World, you'll need to precisely leap past spinning saw blades while hunting down hidden coins to unlock locked blocks.</p>
+            <img src="images/worldsonly/shipworldimg.jpg" alt="Ship World" class="world-preview"> 
+        </div>
 
-	<h3>SHIP WORLD</h3>
-	<p>In ship world, you start to get into more dangerous territory... you now have to jump past saws, and collect coins to open locked blocks!</p>
-	<img src="images/worldsonly/shipworldimg.jpg" alt="Ship World">	
-	
-	<h3>MECH WORLD</h3>
-	<p>In this world, you get to know about fun new mechanics which alter the way you play in levels! From gravity strengtheners and weakeners to speedsters, these mechanics will test how well you can adjust to the abnormal.</p>
-	<img src="images/worldsonly/mechworldimg.jpg" alt="Mechanics">
-	
-	<h3>DESERT WORLD</h3>
-	<p>Welcome to the desert! Beware of cacti spikes that rush in the direction you're facing if you get too close, and balance yourself wisely around quicksand or you'll get sucked in!</p>
-	<img src="images/worldsonly/desertworldimg.jpg" alt="Mechanics">
-	
-	<h3>Any other worlds?</h3>
-	<p>For now, nope! However, in future updates the worlds list might get updated further and further!</p>
+        <!-- Mech World -->
+        <div class="item-card">
+            <h2>Mech World</h2>
+            <p>Prepare to flip your perspective. This world introduces physics-altering mechanics that change how you play the game. From gravity modifiers that change how you jump to high-velocity speedsters, your skills will be tested on how well you can adjust to the abnormal.</p>
+            <img src="images/worldsonly/mechworldimg.jpg" alt="Mech World" class="world-preview">
+        </div>
+
+        <!-- Desert World -->
+        <div class="item-card">
+            <h2>Desert World</h2>
+            <p>Welcome to the desert! Beware of cacti spikes that rush in the direction you're facing if you get too close, and balance yourself wisely around quicksand or you'll get sucked in! It is the hardest world any robo has ever seen yet!</p>
+            <img src="images/worldsonly/desertworldimg.jpg" alt="Desert World" class="world-preview">
+        </div>
+        
+        <!-- Future Worlds -->
+        <div class="note-box">
+            <h3>Looking for more worlds?</h3>
+            <p style="color: #d6e6ff;">The world selection doesn't stop here! Keep an eye out for future updates as I continue to introduce new worlds and expand levels in existing ones.</p>
+        </div>
+    </div>
+
 </body>
+</html>

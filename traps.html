@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Lil Robo Studios!</title>
-    <link rel="icon" href="images/all/robots.ico" type="ico">
+    <link rel="icon" href="images/all/robots.ico" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -13,7 +13,6 @@
 			font-family: 'Noto Sans', sans-serif;
 			margin: 0;
 			padding: 0;
-
 			text-shadow: 
 		        -1px -1px 0 #001a33,  
 		         1px -1px 0 #001a33,
@@ -32,7 +31,7 @@
 
 		.container {
 			width: 92%;
-			max-width: 1200px;
+			max-width: 900px;
 			margin: auto;
 			padding: 30px 20px;
 		}
@@ -46,119 +45,125 @@
 			font-size: 2.2em;
 		}
 
-		h2 {
-			margin-top: 25px;
-			color: #e0edff;
+		h2, h3 {
+			margin-top: 35px;
+			color: #ffd27d;
+			text-align: center;
 		}
 
 		p {
 			line-height: 1.6;
 			color: #f0f4ff;
+			text-align: center;
 		}
 
-		.info-box {
+		.item-card {
 			background: rgba(255, 255, 255, 0.08);
 			padding: 20px;
 			border-radius: 16px;
 			margin: 25px 0;
-		}
-		
-		.info-box.flex img {
-			border-radius: 0;
-			width: 100px;
-			height: 100px;
-			object-fit: contain;
-			flex-shrink: 0;
+			border: 1px solid rgba(255, 255, 255, 0.1);
 		}
 
-
-		.info-box img {
-			width: 100px;
-			height: 100px;
-			object-fit: contain;
-			flex-shrink: 0;
+		.trap-image {
+			display: block;
+			border-radius: 12px;
+			margin: 15px auto;
 		}
 
-		.flex {
+		.trap-images-group {
 			display: flex;
-			flex-wrap: wrap;
 			gap: 20px;
-			align-items: center;
-		}
-
-		.flex img {
-			width: 250px;
-			height: 250px;
-			object-fit: cover;
-			border-radius: 14px;
-		}
-
-		.image-grid {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 25px;
 			justify-content: center;
+			flex-wrap: wrap;
 			margin: 20px 0;
 		}
 
-		.image-grid img {
-			width: 230px;
-			height: 230px;
-			border-radius: 18px;
-			transition: transform 0.2s ease;
+		.trap-images-group img {
+			width: 200px;
+			height: 200px;
+			object-fit: contain;
+			border-radius: 12px;
 		}
 
-		.image-grid img:hover {
-			transform: scale(1.05);
+		.sub-list {
+			background: rgba(255, 255, 255, 0.1);
+			padding: 15px 20px;
+			border-radius: 12px;
+			margin: 15px auto;
+			max-width: 600px;
+			border-left: 3px solid #ffd27d;
+		}
+
+		.sub-list h4 {
+			color: #ffd27d;
+			margin-top: 0;
+			text-align: center;
 		}
 	</style>
 </head>
 <body>
-	<div style="text-align: center; margin-top: 20px;">
-	  <img src="gifs/studiologo.gif" alt="Lil Robo Studios!"><br>
+	<div class="container">
+		<div class="center">
+			<img src="gifs/studiologo.gif" alt="Lil Robo Studios!"><br>
+			<a href="index.html">
+				<img src="images/all/return.png" alt="Return to Home Page." width="300" height="80">
+			</a>
+			<h1>What obstacles do you have to avoid during the game?</h1>
+			<p>There are not many obstacles in the game right now, but they can really give you a good challenge! These traps are:</p>
+		</div>
 
-	  <a href="index.html">
-	    <img src="images/all/return.png" alt="Return to Home Page." width="300" height="80">
-  	  </a>
+		<!-- Spikes -->
+		<div class="item-card">
+			<h3>Spikes!</h3>
+			<img src="images/trapsonly/spike.jpg" alt="Spikes!" class="trap-image">
+			<p>Pretty straightforward to be honest, you hit them and you die...</p>
+		</div>
 
-	  <div style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 40px;">
-	    <img src="images/trapsonly/moveicerobot.png" alt="Ice Robot">
+		<!-- Saws -->
+		<div class="item-card">
+			<h3>Saws!</h3>
+			<img src="images/trapsonly/saw.jpg" alt="Saws!" class="trap-image">
+			<p>There are different types of saws!</p>
 
-	    <div style="text-align: left; max-width: 500px;">
-	      <h1>What obstacles do you have to avoid during the game?</h1>
-	   	  <p>
-	        There are not many obstacles in the game right now, but they can really give you a good challenge! These traps are:
-      	  </p>
-	    </div>
-	  </div>
+			<div class="sub-list">
+				<h4>Static Saws</h4>
+				<p>The saw which stays where it is, even if it might seem like it is gonna break off any second...</p>
+			</div>
+
+			<div class="sub-list">
+				<h4>Rotating Saws</h4>
+				<p>These saws rotate around a specific block! Make sure to jump over them carefully or you might get killed!</p>
+			</div>
+
+			<div class="sub-list">
+				<h4>Moving Saws</h4>
+				<p>These saws move, either horizontally or vertically, and will move back and forth continuously! Be careful... they can be fast and even if you dodge them for the time being, they can come back and still hit you!</p>
+			</div>
+
+			<div class="sub-list">
+				<h4>Rushing Saws</h4>
+				<p>Nearly identical to moving saws, but they go back to their starting point just as they reach their end...</p>
+			</div>
+		</div>
+
+		<!-- Lasers -->
+		<div class="item-card">
+			<h3>Lasers!</h3>
+			<img src="images/trapsonly/laser.jpg" alt="Lasers!" class="trap-image">
+			<p>They appear very rarely, but they don't allow you to just mindlessly take shortcuts! No cheating!</p>
+		</div>
+
+		<!-- Cacti Spikes -->
+		<div class="item-card">
+			<h3>Cacti Spikes!</h3>
+			<div class="trap-images-group">
+				<img src="gifs/trapsonly/cactiy.gif" alt="Cacti Spikes Y-axis!">
+				<img src="gifs/trapsonly/cactix.gif" alt="Cacti Spikes X-axis!">
+			</div>
+			<p>When you get close enough to them, cacti spikes rush towards the direction they are facing, whether that is horizontal or vertical. Watch out, because the further they go, the faster they get... and you don't want to get pricked by one of these!</p>
+		</div>
 	</div>
 
-
-        <h3>Spikes!</h3>
-        <img src="images/trapsonly/spike.jpg" alt="Spikes!">
-        <p>Pretty straightforward to be honest, you hit them and you die...</p>
-
-        <h3>Saws!</h3>
-        <img src="images/trapsonly/saw.jpg" alt="Saws!">
-        <h4>There are different types of saws!</h4>
-
-		<p>Starting off, of course there is the saw which stays where it is, even if it might seem like it is gonna break off any second...</p>
-	
-        <h4>ROTATING SAWS</h4>
-        <p>These saws rotate around a specific block! Make sure to jump over them carefully or you might get killed!</p>
-
-        <h4>MOVING SAWS</h4>
-        <p>These saws move, either horizontally or vertically, and will move back and forth continously! Be careful... they can be fast and even if you dodge them for the time being, they can come back and still hit you!<p>
-
-        <h4>RUSHING SAWS</h4>
-        <p>Nearly identical to moving saws, but! They go back to their starting point just as they reach their end...</p>
-
-        <h3>Lasers!</h3>
-        <img src="images/trapsonly/laser.jpg" alt="Lasers!">
-        <p>They appear very rarely, but they don't allow you to just mindlessly take shortcuts! No cheating!</p>
-
-		<h3>Cacti Spikes!</h3>
-        <img src="gifs/trapsonly/cactiy.gif" alt="Cacti Spikes Y-axis!">	<img src="gifs/trapsonly/cactix.gif" alt="Cacti Spikes X-axis!">
-        <p>When you get close enough to them, cacti spikes rush towards the direction they are facing, whether that is horizontal or vertical. Watch out, because they further they go, the faster they get... and you don't want to get pricked by one of these!</p>
 </body>
 </html>

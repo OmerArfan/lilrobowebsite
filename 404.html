@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lil Robo Studios! - 404</title>
+    <link rel="icon" href="images/all/robots.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(180deg, #0052a3, #0074e8);
+            color: #ffffff;
+            font-family: 'Noto Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-shadow: 
+                -1px -1px 0 #001a33,   
+                 1px -1px 0 #001a33,
+                -1px  1px 0 #001a33,
+                 1px  1px 0 #001a33;
+        }
+
+        a {
+            color: #d6e6ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffd27d;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 900px;
+            margin: auto;
+            padding: 30px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 30px;
+            font-size: 2.5em;
+            color: #ffd27d;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #f0f4ff;
+            font-size: 1.1em;
+        }
+
+        .error-image {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+
+        .return-btn {
+            display: inline-block;
+            margin: 30px 0;
+            transition: transform 0.2s ease;
+        }
+
+        .return-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .return-btn img {
+            width: 300px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="center">
+	    <a class="return-btn" href="index.html">
+                <img src="images/all/return.png" alt="Return to home page" width="300" height="80">
+            </a>
+
+            <h1>ERROR 404!</h1>
+	    
+	    <img src="images/all/crash.jpg" alt="Sad Robo" class="error-image">
+            
+	    <p>Oops! Lil Robo took a wrong turn...</p>
+            
+            <p>This page doesn't exist. Maybe try heading back to where you came from?</p>
+        </div>
+    </div>
+</body>
+</html>
